@@ -20,6 +20,12 @@ code {
   background: none;
   max-height: 80% !important;
   height: 11rem !important;
+  width: 100% !important;
+}
+
+.title:hover {
+  color: #58a6ff;
+  border-bottom: 1px solid #58a6ff;
 }
 
 .rounded {
@@ -51,7 +57,7 @@ code {
   cursor: pointer;
 }
 
-.fa-grip-vertical {
+.octicon-grabber {
   cursor: grab;
 }
 

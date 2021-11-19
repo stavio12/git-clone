@@ -9,7 +9,7 @@ function App() {
   // language;
   const [gitRepos, getRepo] = useState([]);
   useEffect(() => {
-    Axios.get("https://api.github.com/users/vanderkilu/repos?per_page=15" + "&client_id=" + "be0d2752ae8c6d86f1c8" + "&client_secret=" + "7404aa5474a35d1de9999d06cb72bfcaa958d9b4").then((response) => {
+    Axios.get(`https://api.github.com/users/vanderkilu/repos?per_page=15&${process.env.REACT_APP_CLIENT_ID}&${process.env.REACT_APP_CLIENT_ID}`).then((response) => {
       //filter out repos who dont have a language and description
       let newRepo = [];
       (response.data || []).map((res) => {

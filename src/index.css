@@ -11,9 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.pinned-container {
-  max-height: 20vh !important;
+/* .pinned-container {
+  max-height: 80% !important;
   width: 100%;
+} */
+
+.card {
+  background: none;
+  max-height: 80% !important;
+  height: 11rem !important;
 }
 
 .rounded {
@@ -30,4 +36,17 @@ code {
   height: 10px;
   border-radius: 50%;
   background-color: aquamarine;
+}
+
+.language {
+  margin-bottom: 20px;
+Added }
+
+.customize {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.title {
+  color: #58a6ff;
 }

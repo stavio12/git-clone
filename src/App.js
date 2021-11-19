@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
-
+import Loader from "./Screens/Loader";
 import PinnedRepo from "./Screens/PinnedRepo";
 import "./App.css";
 
@@ -31,12 +31,7 @@ function App() {
           </side>
         </div>
         <div className="col-9">
-          {isloading && (
-            <div className="text-center pt-5 mt-5">
-              <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-              <span class="visually-hidden*"> Loading Please wait ...</span>
-            </div>
-          )}
+          {isloading && <Loader />}
 
           {!isloading && (
             <div>

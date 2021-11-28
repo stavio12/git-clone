@@ -2,8 +2,8 @@ function Loader() {
   return (
     <>
       <div className="text-center pt-5 mt-5">
-        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-        <span class="visually-hidden*"> Loading Please wait ...</span>
+        <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+        <span className="visually-hidden*"> Loading Please wait ...</span>
       </div>
     </>
   );

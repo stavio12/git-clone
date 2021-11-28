@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import Loader from "./Screens/Loader";
-import PinnedRepo from "./Screens/PinnedRepo";
+import PinnedRepos from "./Screens/PinnedRepos";
 import "./App.css";
 
 function App() {
@@ -40,11 +40,7 @@ function App() {
                 <p className="customize text-muted text-decoration-none">Customize your pins</p>
               </div>
 
-              <div className="row">
-                {gitRepos.map((repo) => {
-                  return <PinnedRepo repo={repo} key={repo.id} />;
-                })}
-              </div>
+              <PinnedRepos gitRepos={gitRepos} />
             </div>
           )}
         </div>
